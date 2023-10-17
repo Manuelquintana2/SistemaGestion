@@ -40,6 +40,7 @@
             button1 = new Button();
             btnVentas = new Button();
             btnUsuarios = new Button();
+            btnClientes = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -164,12 +165,24 @@
             btnUsuarios.UseVisualStyleBackColor = true;
             btnUsuarios.Click += btnUsuarios_Click;
             // 
+            // btnClientes
+            // 
+            btnClientes.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnClientes.Location = new Point(352, 12);
+            btnClientes.Name = "btnClientes";
+            btnClientes.Size = new Size(104, 52);
+            btnClientes.TabIndex = 8;
+            btnClientes.Text = "Ver Clientes";
+            btnClientes.UseVisualStyleBackColor = true;
+            btnClientes.Click += btnClientes_Click;
+            // 
             // FrmProducto
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaptionText;
             ClientSize = new Size(893, 450);
+            Controls.Add(btnClientes);
             Controls.Add(btnUsuarios);
             Controls.Add(btnVentas);
             Controls.Add(button1);
@@ -197,5 +210,6 @@
         private Button button1;
         private Button btnVentas;
         private Button btnUsuarios;
+        private Button btnClientes;
     }
 }

@@ -82,5 +82,11 @@ namespace SistemaGestionUI
         {
             CargarProductos();
         }
+
+        private void btnClientes_Click(object sender, EventArgs e)
+        {
+            FrmClientes frmCliente = new FrmClientes();
+            frmCliente.ShowDialog();
+        }
     }
 }
