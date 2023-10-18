@@ -26,7 +26,7 @@ namespace SistemaGestion
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            UsuariosBussiness.EliminarUsuario(usuario);
+            UsuariosBussiness.EliminarUsuario(usuario.Id);
             MessageBox.Show("Se grabo Correctamente");
         }
 

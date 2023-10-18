@@ -33,7 +33,7 @@ namespace SistemaGestion
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            VentaBussiness.EliminarVenta(venta);
+            VentaBussiness.EliminarVenta(venta.Id);
             MessageBox.Show("Se grabo Correctamente");
         }
     }

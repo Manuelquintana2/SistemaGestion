@@ -26,9 +26,9 @@ namespace SistemaGestionBussiness
         {
             UsuariosData.ModificarUsuario(usuario);
         }
-        public static void EliminarUsuario(Usuario usuario)
+        public static void EliminarUsuario(int id)
         {
-            UsuariosData.EliminarUsuario(usuario);
+            UsuariosData.EliminarUsuario(id);
         }
     }
 }

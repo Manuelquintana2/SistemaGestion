@@ -26,7 +26,7 @@ namespace SistemaGestion
 
         private void FrmEliminarProductoVendido_Load(object sender, EventArgs e)
         {
-            ProductosVendidosBussiness.EliminarProductoVendido(this.productoVendido);
+            ProductosVendidosBussiness.EliminarProductoVendido(this.productoVendido.Id);
             MessageBox.Show("Se grabo Correctamente");
         }
 

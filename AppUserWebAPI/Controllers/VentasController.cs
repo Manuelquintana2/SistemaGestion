@@ -14,5 +14,21 @@ namespace SistemaGestionWebAPI.Controllers
         {
             return VentaBussiness.ListarVentas().ToArray();
         }
+        [HttpDelete(Name = "EliminarVentas")]
+        public void Delete([FromBody] int id)
+        {
+            VentaBussiness.EliminarVenta(id);
+        }
+
+        [HttpPut(Name = "ModificarVenta")]
+        public void Put([FromBody] Venta venta)
+        {
+            VentaBussiness.ModificarVenta(venta);
+        }
+        [HttpPost(Name = "AltaVenta")]
+        public void Post([FromBody] Venta venta)
+        {
+            VentaBussiness.CrearVenta(venta);
+        }
     }
 }

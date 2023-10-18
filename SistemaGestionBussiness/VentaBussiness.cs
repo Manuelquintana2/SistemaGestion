@@ -26,9 +26,9 @@ namespace SistemaGestionBussiness
         {
             VentasData.ModificarVentas(venta);
         }
-        public static void EliminarVenta(Venta venta)
+        public static void EliminarVenta(int id)
         {
-            VentasData.EliminarVenta(venta);
+            VentasData.EliminarVenta(id);
         }
     }
 }

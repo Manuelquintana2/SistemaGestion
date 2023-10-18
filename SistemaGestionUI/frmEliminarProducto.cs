@@ -36,7 +36,7 @@ namespace SistemaGestion
         private void btnModificar_Click(object sender, EventArgs e)
         {
 
-            ProductoBussiness.EliminarProductos(_producto);
+            ProductoBussiness.EliminarProductos(_producto.Id);
             MessageBox.Show("Se grabo Correctamente");
         }
     }

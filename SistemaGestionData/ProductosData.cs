@@ -162,7 +162,7 @@ namespace SistemaGestionData
                 throw;
             }
         }
-        public static void EliminarProducto(Producto producto)
+        public static void EliminarProducto(int id)
         {
             string query = "DELETE FROM Producto " +
                 " WHERE Id = @Id";
@@ -173,7 +173,7 @@ namespace SistemaGestionData
                     conexion.Open();
                     using (SqlCommand comando = new SqlCommand(query, conexion))
                     {
-                        comando.Parameters.Add(new SqlParameter("Id", SqlDbType.VarChar) { Value = producto.Id });
+                        comando.Parameters.Add(new SqlParameter("Id", SqlDbType.VarChar) { Value = id });
 
                         comando.ExecuteNonQuery();
                     }

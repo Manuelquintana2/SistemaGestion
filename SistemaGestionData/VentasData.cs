@@ -148,7 +148,7 @@ namespace SistemaGestionData
                 throw;
             }
         }
-        public static void EliminarVenta(Venta venta)
+        public static void EliminarVenta(int id)
         {
             string query = "DELETE FROM Venta " +
                 " WHERE Id = @Id";
@@ -159,7 +159,7 @@ namespace SistemaGestionData
                     conexion.Open();
                     using (SqlCommand comando = new SqlCommand(query, conexion))
                     {
-                        comando.Parameters.Add(new SqlParameter("Id", SqlDbType.VarChar) { Value = venta.Id });
+                        comando.Parameters.Add(new SqlParameter("Id", SqlDbType.VarChar) { Value = id });
 
                         comando.ExecuteNonQuery();
                     }

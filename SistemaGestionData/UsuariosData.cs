@@ -161,7 +161,7 @@ namespace SistemaGestionData
                 throw;
             }
         }
-        public static void EliminarUsuario(Usuario usuario)
+        public static void EliminarUsuario(int id)
         {
             string query = "DELETE FROM Usuario " +
                 " WHERE Id = @Id";
@@ -172,7 +172,7 @@ namespace SistemaGestionData
                     conexion.Open();
                     using (SqlCommand comando = new SqlCommand(query, conexion))
                     {
-                        comando.Parameters.Add(new SqlParameter("Id", SqlDbType.VarChar) { Value = usuario.Id });
+                        comando.Parameters.Add(new SqlParameter("Id", SqlDbType.VarChar) { Value = id });
 
                         comando.ExecuteNonQuery();
                     }

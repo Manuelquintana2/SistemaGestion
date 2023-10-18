@@ -16,9 +16,9 @@ namespace SistemaGestionWebAPI.Controllers
         }
     
         [HttpDelete(Name = "EliminarProducto")]
-        public void Delete([FromBody] Producto producto)
+        public void Delete([FromBody] int id)
         {
-            ProductoBussiness.EliminarProductos(producto);
+            ProductoBussiness.EliminarProductos(id);
         }
 
         [HttpPut(Name = "ModificarProducto")]

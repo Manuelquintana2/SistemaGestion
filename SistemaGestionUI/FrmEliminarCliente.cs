@@ -25,7 +25,7 @@ namespace SistemaGestionUI
         }
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            ClienteBussiness.EliminarCliente(cliente);
+            ClienteBussiness.EliminarCliente(cliente.Id);
             MessageBox.Show("Se grabo Correctamente");
         }
 

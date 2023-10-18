@@ -14,5 +14,22 @@ namespace SistemaGestionWebAPI.Controllers
         {
             return ProductosVendidosBussiness.ListarProductosVendidos().ToArray();
         }
+
+        [HttpDelete(Name = "EliminarProductoVendido")]
+        public void Delete([FromBody] int id)
+        {
+            ProductosVendidosBussiness.EliminarProductoVendido(id);
+        }
+
+        [HttpPut(Name = "ModificarProductoVendido")]
+        public void Put([FromBody] ProductoVendido productoVendido)
+        {
+            ProductosVendidosBussiness.ModificarProductoVendido(productoVendido);
+        }
+        [HttpPost(Name = "AltaProductoVendido")]
+        public void Post([FromBody] ProductoVendido productoVendido)
+        {
+            ProductosVendidosBussiness.CrearProductoVendido(productoVendido);
+        }
     }
 }
