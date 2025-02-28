@@ -11,7 +11,7 @@ namespace SistemaGestionData
 {
     public static class VentasData
     {
-        private static string connectionString = @"Server=DESKTOP-OJI53QG\SQLEXPRESS;DataBase=SistemaGestion;
+        private static string connectionString = @"Server=DESKTOP-AG59LHT\SQLEXPRESS;DataBase=SistemaGestion;
                                         Trusted_Connection=True";
         public static List<Venta> ListarVentas()
         {
