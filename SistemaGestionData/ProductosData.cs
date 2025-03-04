@@ -6,8 +6,7 @@ namespace SistemaGestionData
 {
     public static class ProductosData
     {
-        private static string connectionString = @"Server=DESKTOP-AG59LHT\SQLEXPRESS;DataBase=SistemaGestion;
-                                        Trusted_Connection=True";
+        private static string connectionString = Properties.Resources.miConexion;
         public static List<Producto> ListarProductos()
         {
             List<Producto> lista = new List<Producto>();

@@ -11,8 +11,7 @@ namespace SistemaGestionData
 {
     public static class ProductoVendidoData
     {
-        private static string connectionString = @"Server=DESKTOP-AG59LHT\SQLEXPRESS;DataBase=SistemaGestion;
-                                        Trusted_Connection=True";
+        private static string connectionString = Properties.Resources.miConexion;
         public static List<ProductoVendido> ListarProductosVendidos()
         {
             List<ProductoVendido> lista = new List<ProductoVendido>();
